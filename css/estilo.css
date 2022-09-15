@@ -1,0 +1,166 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER PRINCIPAL */
+
+.header-principal{
+    text-align: center;
+    width: 50rem;
+}
+
+.header-principal h1{
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+
+.header-principal h2{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-principal p{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* MAIN PRINCIPAL */
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 62rem;
+    gap: 2rem;
+}
+
+.caja{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 25rem;
+    padding: 2rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 2px 6px 20px rgba(153, 153, 153, 0.478);
+    margin-top: 4rem;
+}
+
+.caja h2{
+    color: hsl(234, 12%, 34%);
+    margin-bottom: .5rem;
+}
+
+.caja p{
+    color: hsl(229, 6%, 66%);
+    font-size: 1.5rem;
+}
+
+.caja-interna1{
+    margin-bottom: 2rem;
+}
+
+.posicion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    padding: 2rem;
+}
+
+.cyan{
+    border-top: .4rem solid hsl(180, 62%, 55%);
+}
+
+.red{
+    border-top: .4rem solid hsl(0, 78%, 62%);
+}
+
+.orange{
+    border-top: .4rem solid hsl(34, 97%, 64%);
+}
+
+.blue{
+    border-top: .4rem solid hsl(212, 86%, 64%);
+}
+
+
+
+@media (max-width: 700px) {
+
+    .grid-principal{
+        margin: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: auto;
+        justify-content: center;
+        padding-bottom: 3rem;
+
+    }
+
+    .header-principal{
+        text-align: center;
+        width: 25rem;
+    }
+
+    .header-principal h1{
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+    
+    .header-principal h2{
+        font-size: 2rem;
+    }
+    
+    .header-principal p{
+        font-size: 1.2rem;
+    }
+
+  }
